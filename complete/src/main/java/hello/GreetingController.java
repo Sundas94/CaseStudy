@@ -13,5 +13,11 @@ public class GreetingController {
         model.addAttribute("name", name);
         return "greeting";
     }
+	
+	@GetMapping("/hobby")
+    public String hpbby(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
+        model.addAttribute("hobby", name);
+        return "hobby";
+    }
 
 }
