@@ -15,8 +15,8 @@ public class GreetingController {
     }
 	
 	@GetMapping("/hobby")
-    public String hobby(@RequestParam(pasttime="pasttime", required=false, defaultValue="World") String pasttime, Model model) {
-        model.addAttribute("hobby", pasttime);
+    public String hobby(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
+        model.addAttribute("hobby", hobby);
         return "hobby";
     }
 
