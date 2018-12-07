@@ -1,0 +1,10 @@
+Started on 06-Dec-2018 22:08:00
+Using strategy: Default
+[poll] Last Built Revision: Revision 8d8071656d7003c9ce7c8daff0cf8fd45b73b763 (refs/remotes/origin/master)
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe ls-remote -h https://github.com/Sundas94/CaseStudy.git # timeout=10
+Found 1 remote heads on https://github.com/Sundas94/CaseStudy.git
+[poll] Latest remote head revision on refs/heads/master is: 6d6a82d93e59c3223361e850265d0b385f22847d
+Done. Took 1.3 sec
+Changes found

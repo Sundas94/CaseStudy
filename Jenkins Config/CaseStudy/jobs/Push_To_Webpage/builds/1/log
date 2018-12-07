@@ -1,0 +1,14 @@
+Started by upstream project "[8mha:////4FYxGchc252CKVqCVl7Gk+reryNyr5R9nJY7H75ugRQJAAAApR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgZJ/az8JP2A/JyceOf83IKc1JLUeKfSzJwUfQBToccszgAAAA==[0mPoll_Complete_Build" build number [8mha:////4I5REBevGggPHEvQYxvbgyYk70j6dCAJJ6sj79q3TsiuAAAApx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgZp/az8JP2A/JyceOf83IKc1JLUeKfSzJwUfUMDADQL6HLQAAAA[0m10
+originally caused by:
+ Started by an SCM change
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\Push_To_Webpage
+[Push_To_Webpage] $ cmd /c call C:\Windows\TEMP\jenkins4666651530779170596.bat
+
+C:\Program Files (x86)\Jenkins\workspace\Push_To_Webpage>echo endingActiveServer 
+endingActiveServer
+
+C:\Program Files (x86)\Jenkins\workspace\Push_To_Webpage>ps   | grep java-fullstack   | awk '{print $1}'   | xargs kill -9   || true
+'ps' is not recognized as an internal or external command,
+operable program or batch file.
+Build step 'Execute Windows batch command' marked build as failure
+Finished: FAILURE

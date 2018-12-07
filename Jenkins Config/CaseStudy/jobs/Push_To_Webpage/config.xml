@@ -1,0 +1,28 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.BatchFile>
+      <command>echo endingActiveServer&#xd;
+jps -l&#xd;
+for /f &quot;tokens=1&quot; %i in (&apos;jps -m ^| find &quot;artefacts&quot;&apos;) do ( taskkill /F /PID %i )&#xd;
+echo pushingNewServer&#xd;
+cd ..\Poll_Complete_Build\complete\build\libs\&#xd;
+copy gs-serving-web-content-0.1.0.jar ..\..\..\..\artefacts&#xd;
+cd ..\..\..\..\artefacts&#xd;
+java -jar gs-serving-web-content-0.1.0.jar</command>
+    </hudson.tasks.BatchFile>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

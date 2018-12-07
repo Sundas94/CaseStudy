@@ -1,0 +1,112 @@
+Started by an SCM change
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+Cloning the remote Git repository
+Cloning repository https://github.com/Sundas94/CaseStudy.git
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe init C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build # timeout=10
+Fetching upstream changes from https://github.com/Sundas94/CaseStudy.git
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe fetch --tags --progress https://github.com/Sundas94/CaseStudy.git +refs/heads/*:refs/remotes/origin/*
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe config remote.origin.url https://github.com/Sundas94/CaseStudy.git # timeout=10
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe config remote.origin.url https://github.com/Sundas94/CaseStudy.git # timeout=10
+Fetching upstream changes from https://github.com/Sundas94/CaseStudy.git
+using GIT_ASKPASS to set credentials 
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe fetch --tags --progress https://github.com/Sundas94/CaseStudy.git +refs/heads/*:refs/remotes/origin/*
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 8d8071656d7003c9ce7c8daff0cf8fd45b73b763 (refs/remotes/origin/master)
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe config core.sparsecheckout # timeout=10
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe checkout -f 8d8071656d7003c9ce7c8daff0cf8fd45b73b763
+Commit message: "Another one"
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe rev-list --no-walk a23bb3b584254ab79ea587fcf5fe8295095427ca # timeout=10
+[Poll_Complete_Build] $ cmd /c call C:\Windows\TEMP\jenkins490399063230633568.bat
+
+C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build>echo movingToWorkspace 
+movingToWorkspace
+
+C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build>cd complete/ 
+
+C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build\complete>echo callingBuildScript 
+callingBuildScript
+
+C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build\complete>call gradlew build --info 
+Initialized native services in: C:\Windows\System32\config\systemprofile\.gradle\native
+Removing daemon from the registry due to communication failure. Daemon information: DaemonInfo{pid=17264, address=[286d584b-ea88-47bb-81a4-249952e07a7d port:63288, addresses:[/127.0.0.1, /0:0:0:0:0:0:0:1]], state=Idle, lastBusy=1544132719114, context=DefaultDaemonContext[uid=f0037c15-6da0-4c2f-993b-5b04877ae5fe,javaHome=C:\Program Files\Java\jdk1.8.0_191,daemonRegistryDir=C:\Windows\System32\config\systemprofile\.gradle\daemon,pid=17264,idleTimeout=10800000,daemonOpts=-XX:+HeapDumpOnOutOfMemoryError,-Xmx1024m,-Dfile.encoding=windows-1252,-Duser.country=IE,-Duser.language=en,-Duser.variant]}
+Removing 0 daemon stop events from registry
+Previous Daemon (9716) stopped at Thu Dec 06 21:38:17 GMT 2018 by user or operating system
+Previous Daemon (17264) stopped at Thu Dec 06 22:05:20 GMT 2018 by user or operating system
+Starting a Gradle Daemon, 1 incompatible and 2 stopped Daemons could not be reused, use --status for details
+Starting process 'Gradle build daemon'. Working directory: C:\Windows\System32\config\systemprofile\.gradle\daemon\4.6 Command: C:\Program Files\Java\jdk1.8.0_191\bin\java.exe -XX:+HeapDumpOnOutOfMemoryError -Xmx1024m -Dfile.encoding=windows-1252 -Duser.country=IE -Duser.language=en -Duser.variant -cp C:\Windows\system32\config\systemprofile\.gradle\wrapper\dists\gradle-4.6-bin\4jp4stjndanmxuerzfseyb6wo\gradle-4.6\lib\gradle-launcher-4.6.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 4.6
+Successfully started process 'Gradle build daemon'
+An attempt to start the daemon took 2.68 secs.
+The client will now receive all logging from the daemon (pid: 12028). The daemon log file: C:\Windows\System32\config\systemprofile\.gradle\daemon\4.6\daemon-12028.out.log
+Starting build in new daemon [memory: 954.7 MB]
+Closing daemon's stdin at end of input.
+The daemon will no longer process any standard input.
+Using 4 worker leases.
+Starting Build
+Settings evaluated using settings file 'C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build\complete\settings.gradle'.
+Projects loaded. Root project using build file 'C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build\complete\build.gradle'.
+Included projects: [root project 'complete']
+Evaluating root project 'complete' using build file 'C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build\complete\build.gradle'.
+Applying dependency management to configuration 'annotationProcessor' in project 'complete'
+Applying dependency management to configuration 'apiElements' in project 'complete'
+Applying dependency management to configuration 'archives' in project 'complete'
+Applying dependency management to configuration 'bootArchives' in project 'complete'
+Applying dependency management to configuration 'compile' in project 'complete'
+Applying dependency management to configuration 'compileClasspath' in project 'complete'
+Applying dependency management to configuration 'compileOnly' in project 'complete'
+Applying dependency management to configuration 'default' in project 'complete'
+Applying dependency management to configuration 'implementation' in project 'complete'
+Applying dependency management to configuration 'runtime' in project 'complete'
+Applying dependency management to configuration 'runtimeClasspath' in project 'complete'
+Applying dependency management to configuration 'runtimeElements' in project 'complete'
+Applying dependency management to configuration 'runtimeOnly' in project 'complete'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'complete'
+Applying dependency management to configuration 'testCompile' in project 'complete'
+Applying dependency management to configuration 'testCompileClasspath' in project 'complete'
+Applying dependency management to configuration 'testCompileOnly' in project 'complete'
+Applying dependency management to configuration 'testImplementation' in project 'complete'
+Applying dependency management to configuration 'testRuntime' in project 'complete'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'complete'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'complete'
+All projects evaluated.
+Selected primary task 'build' from project :
+Tasks to be executed: [task ':compileJava', task ':processResources', task ':classes', task ':bootJar', task ':jar', task ':assemble', task ':compileTestJava', task ':processTestResources', task ':testClasses', task ':test', task ':check', task ':build']
+:compileJava (Thread[Task worker for ':',5,main]) started.
+:compileJava
+Resolving global dependency management for project 'complete'
+Excluding [ognl:ognl, org.javassist:javassist, org.apache.tomcat:tomcat-annotations-api]
+Excluding []
+Task ':compileJava' is not up-to-date because:
+  No history is available.
+All input files are considered out-of-date for incremental task ':compileJava'.
+Compiling with JDK Java compiler API.
+C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build\complete\src\main\java\hello\GreetingController.java:19: error: cannot find symbol
+        model.addAttribute("hobby", hobby);
+                                    ^
+  symbol:   variable hobby
+  location: class GreetingController
+1 error
+:compileJava FAILED
+:compileJava (Thread[Task worker for ':',5,main]) completed. Took 10.913 secs.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 24s
+1 actionable task: 1 executed
+Build step 'Execute Windows batch command' marked build as failure
+Finished: FAILURE

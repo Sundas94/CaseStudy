@@ -1,0 +1,146 @@
+Started by an SCM change
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+Cloning the remote Git repository
+Cloning repository https://github.com/Sundas94/CaseStudy.git
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe init C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build # timeout=10
+Fetching upstream changes from https://github.com/Sundas94/CaseStudy.git
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe fetch --tags --progress https://github.com/Sundas94/CaseStudy.git +refs/heads/*:refs/remotes/origin/*
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe config remote.origin.url https://github.com/Sundas94/CaseStudy.git # timeout=10
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe config remote.origin.url https://github.com/Sundas94/CaseStudy.git # timeout=10
+Fetching upstream changes from https://github.com/Sundas94/CaseStudy.git
+using GIT_ASKPASS to set credentials 
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe fetch --tags --progress https://github.com/Sundas94/CaseStudy.git +refs/heads/*:refs/remotes/origin/*
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision a23bb3b584254ab79ea587fcf5fe8295095427ca (refs/remotes/origin/master)
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe config core.sparsecheckout # timeout=10
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe checkout -f a23bb3b584254ab79ea587fcf5fe8295095427ca
+Commit message: "Another commit"
+ > C:\Users\sshahid\AppData\Local\Programs\Git\cmd\git.exe rev-list --no-walk 77c9ad35ff1ebf215f8726d44a02dfab3f1334bf # timeout=10
+[Poll_Complete_Build] $ cmd /c call C:\Windows\TEMP\jenkins8865869556958423041.bat
+
+C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build>echo movingToWorkspace 
+movingToWorkspace
+
+C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build>cd complete/ 
+
+C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build\complete>echo callingBuildScript 
+callingBuildScript
+
+C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build\complete>call gradlew build --info 
+Initialized native services in: C:\Windows\System32\config\systemprofile\.gradle\native
+The client will now receive all logging from the daemon (pid: 17264). The daemon log file: C:\Windows\System32\config\systemprofile\.gradle\daemon\4.6\daemon-17264.out.log
+Starting 2nd build in daemon [uptime: 6 mins 58.197 secs, performance: 99%, no major garbage collections]
+Closing daemon's stdin at end of input.
+The daemon will no longer process any standard input.
+Using 4 worker leases.
+Invalidating in-memory cache of C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build\complete\.gradle\4.6\fileHashes\fileHashes.bin
+Starting Build
+Settings evaluated using settings file 'C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build\complete\settings.gradle'.
+Projects loaded. Root project using build file 'C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build\complete\build.gradle'.
+Included projects: [root project 'complete']
+Evaluating root project 'complete' using build file 'C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build\complete\build.gradle'.
+Applying dependency management to configuration 'annotationProcessor' in project 'complete'
+Applying dependency management to configuration 'apiElements' in project 'complete'
+Applying dependency management to configuration 'archives' in project 'complete'
+Applying dependency management to configuration 'bootArchives' in project 'complete'
+Applying dependency management to configuration 'compile' in project 'complete'
+Applying dependency management to configuration 'compileClasspath' in project 'complete'
+Applying dependency management to configuration 'compileOnly' in project 'complete'
+Applying dependency management to configuration 'default' in project 'complete'
+Applying dependency management to configuration 'implementation' in project 'complete'
+Applying dependency management to configuration 'runtime' in project 'complete'
+Applying dependency management to configuration 'runtimeClasspath' in project 'complete'
+Applying dependency management to configuration 'runtimeElements' in project 'complete'
+Applying dependency management to configuration 'runtimeOnly' in project 'complete'
+Applying dependency management to configuration 'testAnnotationProcessor' in project 'complete'
+Applying dependency management to configuration 'testCompile' in project 'complete'
+Applying dependency management to configuration 'testCompileClasspath' in project 'complete'
+Applying dependency management to configuration 'testCompileOnly' in project 'complete'
+Applying dependency management to configuration 'testImplementation' in project 'complete'
+Applying dependency management to configuration 'testRuntime' in project 'complete'
+Applying dependency management to configuration 'testRuntimeClasspath' in project 'complete'
+Applying dependency management to configuration 'testRuntimeOnly' in project 'complete'
+All projects evaluated.
+Selected primary task 'build' from project :
+Invalidating in-memory cache of C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build\complete\.gradle\4.6\fileContent\annotation-processors.bin
+Tasks to be executed: [task ':compileJava', task ':processResources', task ':classes', task ':bootJar', task ':jar', task ':assemble', task ':compileTestJava', task ':processTestResources', task ':testClasses', task ':test', task ':check', task ':build']
+Invalidating in-memory cache of C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build\complete\.gradle\4.6\fileHashes\resourceHashesCache.bin
+Invalidating in-memory cache of C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build\complete\.gradle\4.6\taskHistory\taskHistory.bin
+Invalidating in-memory cache of C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build\complete\.gradle\buildOutputCleanup\outputFiles.bin
+:compileJava (Thread[Daemon worker Thread 2,5,main]) started.
+:compileJava
+Resolving global dependency management for project 'complete'
+Excluding [ognl:ognl, org.javassist:javassist, org.apache.tomcat:tomcat-annotations-api]
+Excluding []
+Task ':compileJava' is not up-to-date because:
+  No history is available.
+All input files are considered out-of-date for incremental task ':compileJava'.
+Compiling with JDK Java compiler API.
+C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build\complete\src\main\java\hello\GreetingController.java:18: error: cannot find symbol
+    public String hobby(@RequestParam(pasttime="pasttime", required=false, defaultValue="World") String pasttime, Model model) {
+                                               ^
+  symbol:   method pasttime()
+  location: @interface RequestParam
+1 error
+:compileJava FAILED
+:compileJava (Thread[Daemon worker Thread 2,5,main]) completed. Took 5.914 secs.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 8s
+1 actionable task: 1 executed
+Build step 'Execute Windows batch command' marked build as failure
+Sending e-mails to: sundas_shahid94@hotmail.com
+ERROR: Could not connect to SMTP host: localhost, port: 25
+javax.mail.MessagingException: Could not connect to SMTP host: localhost, port: 25;
+  nested exception is:
+	java.net.ConnectException: Connection refused: connect
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1934)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:638)
+	at javax.mail.Service.connect(Service.java:295)
+	at javax.mail.Service.connect(Service.java:176)
+	at javax.mail.Service.connect(Service.java:125)
+	at javax.mail.Transport.send0(Transport.java:194)
+	at javax.mail.Transport.send(Transport.java:124)
+	at hudson.tasks.MailSender.run(MailSender.java:131)
+	at hudson.tasks.Mailer.perform(Mailer.java:171)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:81)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:744)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:690)
+	at hudson.model.Build$BuildExecution.post2(Build.java:186)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:635)
+	at hudson.model.Run.execute(Run.java:1835)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:429)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:286)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:231)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:1900)
+	... 18 more
+Finished: FAILURE

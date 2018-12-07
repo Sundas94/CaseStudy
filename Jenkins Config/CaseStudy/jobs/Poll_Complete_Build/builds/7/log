@@ -1,0 +1,7 @@
+Started by an SCM change
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+ERROR: [WS-CLEANUP] Cannot delete workspace: C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build -> C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build_ws-cleanup_1544133793564
+ERROR: Cannot delete workspace: C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build -> C:\Program Files (x86)\Jenkins\workspace\Poll_Complete_Build_ws-cleanup_1544133793564
+Finished: FAILURE
